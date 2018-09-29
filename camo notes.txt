@@ -1,0 +1,70 @@
+﻿Użytkownik:
+- login - > user django
+- imię <-> user django
+- nazwisko <-> user django
+- email <-> user django
+- czy aktywny?
+- telefon
+- adres
+- data urodzenia
+- pesel
+- numer dowodu
+- nr licencji + ważność
+- badania + ważność
+- rola
+	- uczeń
+	- pilot
+	- instruktor (restrykcje)
+- moduły <-> user django authorizations
+	- camo
+	- SMS
+	- szkolenia
+	- finanse
+- dopuszczone typy SALT
+
+Menu główne panelu:
+- Operacje lotnicze - pilot|instruktor 
+- Szkolenia - uczeń
+- Uczniowie - instruktor
+- Czas pracy - intruktor
+- Rozliczenia - uczeń|pilot
+- Profil - uczeń|pilot|instruktor
+
+Nowy użytkownik - tylko w adminie django
+Zmiana użytkownika - custom form (z listy użytkowników lub menu - profil)
+Usunięcie użytkownika - tylko deaktywacja (z listy użytkowników)
+
+------------------
+
+CAMO:
+- Automatyczne tworzenie obsług UM i OVH z P/N
+- raport ARC po częściach nadrzędnych
+- ATA do części
+- dodać uwzględnienie czynności parked / flying
+
+PDT:
+- dodać usterki + blokowanie
+
+---
+
+Deployment:
+- ujednolicić wersje
+    x ekstrakt danych z DS / dumpdata
+    x deploy aktualnej wersji na Saltserver / flush --no-initial-data /check
+    x import danych z DS / loaddata
+	x użytkownicy 
+    x prawa dostępu do katalogu system / użytkownik salt?
+	- konfiguracja routera
+	- informacja o przeniesieniu na Saltserver
+    - import zdarzeń SMS
+	
+- mod_wsgi w trybie daemon
+- konfiguracja SAMBY
+
+Zmana ASO
+
+Model - POT_Group, Work_order, Modification, WB_Report
+Forms - WorkOrderCreateForm
+Views - AircraftARC, FileImport
+Loaders - POTGroupImport
+Template - aircraft_arc.html

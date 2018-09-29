@@ -1,0 +1,33 @@
+XOJO
+
+Monitorowanie inwestycji PKP
+Identyfikacja ludzi, sprzętu
+- koordynaty
+- wysokość
+- prekość
+- czas
+- odniesienie do mapy
+Kamera może się poruszać
+
+Granice działek
+Na osobnym obrazie
+1920 x 1080
+
+Nałożenie danych na raw obraz
+W styczniu przetarg
+
+---
+
+Reverse geotaging obrazu
+Mapa jako osobny byt
+Naniesienie mapy na obraz
+Detekcja obiektów na obrazie
+
+---
+
+nominatim
+geopy
+
+AIzaSyB4rvWOGQAx53ELhhyxFmxYpF_kRIcMr3k
+
+

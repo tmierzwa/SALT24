@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="Saltserver" deleteMissingItems="true">
+    <serverData>
+      <paths name="Saltserver">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/db.salt" />
+            <excludedPath local="true" path="$PROJECT_DIR$/salt/settings.py" />
+            <excludedPath local="true" path="$PROJECT_DIR$/camo/migrations" />
+            <excludedPath local="true" path="$PROJECT_DIR$/pdt/migrations" />
+            <excludedPath local="true" path="$PROJECT_DIR$/sms/migrations" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
